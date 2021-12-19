@@ -1,0 +1,62 @@
+
+body {background-image:url(背景.jpg); 
+    background-position:center;
+    background-size: cover ;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.game-pane {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.cell:hover{background-color:burlywood;}
+.cell:hover{color:darkgreen;}
+button:hover{background-color:darkcyan}
+button{background-color:cadetblue;}
+
+.cell {
+    background-color: #ccc;
+    width: 1.5em;
+    height: 1.5em;
+
+    border-style: outset;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+
+.clear{
+    border-style: solid;
+    border-color:bisque;
+    background-color:burlywood;
+}
+
+.cell.landmine {
+    background-image:url(雷.jpg);
+    background-position:center;
+    background-size:cover;
+
+}
+
+.cell.landmine.exploded {
+    background-image:url(踩雷.jfif);
+    background-position:center;
+    background-size:cover;
+}
+
+.cell.landmine.success {
+    background-image:url(玫瑰.jfif);
+    background-position:center;
+    background-size:cover;
+}
